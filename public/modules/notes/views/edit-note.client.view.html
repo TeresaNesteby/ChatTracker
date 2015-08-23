@@ -1,0 +1,53 @@
+<section data-ng-controller="NotesController" data-ng-init="findOne()">
+    <div class="page-header">
+        <h1>Edit Note</h1>
+    </div>
+    <div class="col-md-12">
+        <form class="form-horizontal" data-ng-submit="update()" novalidate>
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="name">Name</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.name" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+
+                    <label class="control-label" for="student">Student</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.student" id="student" class="form-control" placeholder="Student" required>
+                    </div>
+
+                    <label class="control-label" for="form_of_communication">Form of Communication</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.form_of_communication" id="student" class="form-control" placeholder="Form of Communication" required>
+                    </div>
+
+                    <label class="control-label" for="date_of_meeting">Date of Meeting</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.date_of_meeting" id="date_of_meeting" class="form-control" placeholder="Date of Meeting" required>
+                    </div>
+
+                     <label class="control-label" for="guardian">Guardian</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.guardian" id="guardian" class="form-control" placeholder="Guardian" required>
+                    </div>
+
+                     <label class="control-label" for="reinforcment">Reinforcement</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.reinforcement" id="reinforcement" class="form-control" placeholder="Reinforcement" required>
+                    </div>
+
+                      <label class="control-label" for="description">Description</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="note.description" id="description" class="form-control" placeholder="Description" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-default">
+                </div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+            </fieldset>
+        </form>
+    </div>
+</section>
