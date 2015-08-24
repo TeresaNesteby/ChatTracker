@@ -41,5 +41,13 @@ angular.module('users').config(['$stateProvider',
 			url: '/password/reset/:token',
 			templateUrl: 'modules/users/views/password/reset-password.client.view.html'
 		});
+
+
+
+		// state('users_home', {
+		// 	url: '/users_home',
+		// 	templateUrl: 'modules/users/views/users_home.client.view.html'
+		// 	????????? need to make users_home
+		// });
 	}
 ]);
