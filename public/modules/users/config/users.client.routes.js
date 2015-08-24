@@ -43,11 +43,9 @@ angular.module('users').config(['$stateProvider',
 		});
 
 
-
-		// state('users_home', {
-		// 	url: '/users_home',
-		// 	templateUrl: 'modules/users/views/users_home.client.view.html'
-		// 	????????? need to make users_home
+		// state('user_homepage', {
+		// 	url: '/user_homepage',
+		// 	templateUrl: 'modules/users/views/user_homepage.client.view.html'
 		// });
 	}
 ]);

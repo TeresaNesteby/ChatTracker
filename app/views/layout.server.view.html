@@ -62,6 +62,12 @@
 	{% if process.env.NODE_ENV === 'development' %}
 	<!--Livereload script rendered -->
 	<script type="text/javascript" src="http://{{request.hostname}}:35729/livereload.js"></script>
+<!-- D3 Graph script  -->
+	<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+  <script src="liquidFillGauge.js" language="JavaScript"></script>
+  <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+  </style>
 	{% endif %}
 </body>
 
